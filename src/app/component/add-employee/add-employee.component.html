@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Add Employee Data</h1>
+
+<div mat-dialog-content>
+    <form [formGroup]="employeeForm">
+        <mat-form-field apperance="outline">
+            <mat-label>Employee Name</mat-label>
+            <input formControlName="name" matInput placeholder="Name" required>
+
+        </mat-form-field>
+        <mat-form-field apperance="outline">
+            <mat-label>Location</mat-label>
+            <mat-select formControlName="location" placeholder="Location">
+                <mat-option value="Banglore">Banglore</mat-option>
+                <mat-option value="Chennai">chennai</mat-option>
+                <mat-option value="Pune">Pune</mat-option>
+                <mat-option value="Hyderabad">Hyderabad</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field apperance="outline">
+            <mat-label>Email Id</mat-label>
+            <input matInput formControlName="email" placeholder="Email" required type="email">
+        </mat-form-field>
+        <mat-form-field apperance="outline">
+            <mat-label>Mobile Number</mat-label>
+            <input matInput formControlName="mobile" placeholder="Mobile" maxlength="{{phoneLength}}">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left:8px" mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+</div>

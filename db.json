@@ -1,0 +1,32 @@
+{
+  "employeeList": [
+    {
+      "id": 1,
+      "name": "Ram",
+      "location": "Banglore",
+      "email": "ram@mail.com",
+      "mobile": "9867512345"
+    },
+    {
+      "id": 2,
+      "name": "Raj",
+      "location": "Chennai",
+      "email": "raj@mail.com",
+      "mobile": "7867534521"
+    },
+    {
+      "id": 3,
+      "name": "Vinay",
+      "location": "Pune",
+      "email": "vinay@mail.com",
+      "mobile": "9975287450"
+    },
+    {
+      "name": "man",
+      "location": "Banglore",
+      "email": "man@gmai.com",
+      "mobile": "1234567890",
+      "id": 4
+    }
+  ]
+}
