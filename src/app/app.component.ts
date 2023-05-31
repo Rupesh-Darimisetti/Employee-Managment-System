@@ -74,6 +74,7 @@ export class AppComponent implements OnInit {
       next: (res) => {
         alert('Employee deleted Successfuly');
         this.getAllEmployees();
+        this.TotalEmployeeCount();
       },
       error: () => {
         alert('error while deleting the Employee ');
